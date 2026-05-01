@@ -199,3 +199,44 @@ docker run docker_uid/cdac-java :1.0
 ```
 
 
+## Docker Networking
+
+fork this repo:- https://github.com/newdelthis/docker_networking.git
+
+```
+cd ~
+```
+```
+git clone https://github.com/Git_ID/docker_networking.git
+```
+```
+docker   run   -d     --name mysql-db     -e    MYSQL_ROOT_PASSWORD=root   -e   MYSQL_DATABASE=school     -p 3306:3306   mysql:8
+```
+
+```
+cd docker_networking
+docker build -t student-app
+docker network crate mynet
+docker   run   -d   --network mynet   --name  mysql-db   -e MYSQL_ROOT_PASSWORD=root   -e MYSQL_DATABASE=school   mysql:8
+docker   run   --network   mynet   --name     app     student-app
+docker   exec   -it   mysql-db      mysql   -uroot   -proot
+```
+Now in my sql: 
+```
+mysql> USE school;
+mysql> SELECT   *   FROM    students;
+exit
+```
+
+
+Docker Volume
+NOt complete
+
+
+
+## NGINX with volume
+
+
+
+
+
