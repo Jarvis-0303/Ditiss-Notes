@@ -32,6 +32,7 @@
 
 ## On local machine Git Ternimal
 
+```
 cd ~
 git clone your < rpo name >.git
 cd demo
@@ -40,10 +41,5 @@ git status
 git add Hello.java
 git commit -m "Added Hello.java“
 git push origin main
-
-
-```python
-def hello_world():
-    print("Hello, World!")
 ```
 
