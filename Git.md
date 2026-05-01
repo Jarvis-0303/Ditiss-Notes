@@ -16,7 +16,7 @@
 2. git config --global user.email "your email_id"
 
 ## To genrate Token
-1.Log in to GitHub
+1. Log in to GitHub
 2. Click on your profile icon (top-right corner)
 3. Select Settings
 4. In the left sidebar, click Developer settings
@@ -42,4 +42,8 @@ git commit -m "Added Hello.java“
 git push origin main
 
 
+```python
+def hello_world():
+    print("Hello, World!")
+```
 
